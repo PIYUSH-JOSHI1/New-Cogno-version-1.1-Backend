@@ -98,14 +98,16 @@ except ImportError:
 
 try:
     import mediapipe as mp
+    # Some environments require explicit import of solutions or may fail due to Python version mismatch
     mp_pose = mp.solutions.pose
     mp_hands = mp.solutions.hands
     mp_drawing = mp.solutions.drawing_utils
     MEDIAPIPE_AVAILABLE = True
     logger.info("MediaPipe initialized successfully")
-except ImportError:
+except Exception as e:
     MEDIAPIPE_AVAILABLE = False
-    logger.warning("MediaPipe not installed - dyspraxia features limited")
+    logger.error(f"MediaPipe initialization failed: {str(e)}")
+    logger.warning("Dyspraxia movement analysis features will be disabled")
 
 # =============================================================================
 # Transformers for Text Processing
