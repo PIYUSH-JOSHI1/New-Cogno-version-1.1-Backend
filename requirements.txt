@@ -11,14 +11,14 @@ gunicorn==21.2.0
 supabase==2.3.0
 
 # Computer Vision (Dyspraxia)
-opencv-python-headless==4.8.1.78
-mediapipe==0.10.9
-numpy==1.26.2
+opencv-python-headless>=4.8.0
+mediapipe>=0.10.30
+numpy>=1.26.0
 
 # NLP / Text Processing (Dyslexia)
-transformers==4.36.0
-torch==2.1.1
-sentencepiece==0.1.99
+transformers>=4.36.0
+torch>=2.1.0
+sentencepiece>=0.1.99
 
 # Image Processing (Dysgraphia)
 pillow==10.1.0
