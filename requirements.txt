@@ -2,13 +2,13 @@
 # =============================================
 
 # Core Framework
-flask==3.0.0
-flask-cors==4.0.0
-python-dotenv==1.0.0
-gunicorn==21.2.0
+flask>=3.0.0
+flask-cors>=4.0.0
+python-dotenv>=1.0.0
+gunicorn>=21.2.0
 
 # Supabase (Database & Auth)
-supabase==2.3.0
+supabase>=2.3.0
 
 # Computer Vision (Dyspraxia)
 opencv-python-headless>=4.8.0
@@ -21,19 +21,16 @@ torch>=2.1.0
 sentencepiece>=0.1.99
 
 # Image Processing (Dysgraphia)
-pillow==10.1.0
+pillow>=10.1.0
 
 # PDF Generation (Reports)
-reportlab==4.0.7
-pypdf2==3.0.1
-
-# Email
-# (Uses built-in smtplib, no additional packages needed)
+reportlab>=4.0.7
+pypdf2>=3.0.1
 
 # Utilities
-python-dateutil==2.8.2
-requests==2.31.0
+python-dateutil>=2.8.2
+requests>=2.31.0
 
 # Development
-pytest==7.4.3
-pytest-cov==4.1.0
+pytest>=7.4.3
+pytest-cov>=4.1.0
